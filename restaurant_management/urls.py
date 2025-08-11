@@ -15,9 +15,9 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path  # this is the statement used for importing 'path' function from 'django.urls'. So stop calling it error and telling me to import it
 from django.urls import include
-from .views import *
+from .views import custom_page_not_found
 from django.conf.urls import handler404
 
 handler404 = custom_page_not_found
