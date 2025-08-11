@@ -8,7 +8,7 @@ def homepage(request):
     }
     return render(request,'index.html', context)
 
-def aboutpage(request):
+def about_page(request):
     context = {
         'restaurant_name': settings.RESTAURANT_NAME
     }
